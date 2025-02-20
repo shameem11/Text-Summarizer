@@ -37,10 +37,10 @@ for file_path in list_of_files:
         os.makedirs(filedir,exist_ok=True)
         logging.info(f"created directory:{filedir} for the {filename}")
 
-if (not os.path.exists(file_path)) or (os.path.getsize(file_path) == 0):
-    with open(file_path,"w") as f:
+    if (not os.path.exists(file_path)) or (os.path.getsize(file_path) == 0):
+      with open(file_path,"w") as f:
         pass
         logging.info(f"created file:{file_path}")
-else:
-    logging.info(f"file:{file_path} already exists")
+    else:
+     logging.info(f"file:{file_path} already exists")
     
