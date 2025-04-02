@@ -4,4 +4,5 @@ nltk
 pyYAML
 torch
 transformers
+python-box
 -e .
